@@ -1,32 +1,39 @@
-/*----------------------------------------------------------------------------------------------------------------------------------------------------
-AngularJS 1.X
-A module contains the different components of an AngularJS app
-A controller manages the app's data
-An expression displays values on the page
-A filter formats the value of an expression
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------
-CLOAK : The ngCloak directive is used to prevent the Angular html template from being briefly displayed 
-by the browser in its raw (uncompiled) form while your application is loading. Use this directive to 
-avoid the undesirable flicker effect caused by the html template display.
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------
-Main JS
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-(function() {
+(() => {
     'use strict';
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------
-Save all inventory data into an array...
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------------------------------
+    Include this – ui.router – dependency at the top level...
+    ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
     angular
-        .module('stabList', [ ])
+        .module('holdPlease', ['ui.router'])
+        .config(appConfig);
+
+    /*----------------------------------------------------------------------------------------------------------------------------------------------------
+    The config block of our angular module always executes before our controllers and services are instantiated 
+    and data is bound to our page. This is where we would do any mandatory configuration of our module.    
+    ------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    appConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+
+    function appConfig($stateProvider, $urlRouterProvider) {
+       $urlRouterProvider.otherwise('/')
+
+        $stateProvider
+            .state('home', {
+                url: '/',
+                templateUrl: 'partials/home.html'
+            })
+            .state('category', {
+                url: '/category',
+                templateUrl: 'partials/category.html',
+            })
+            .state('list', {
+                url: '/list',
+                templateUrl: 'partials/list.html'
+            })
+             .state('featured', {
+                url: '/featured',
+                templateUrl: 'partials/featured.html',
+            });
+    }
 })();
