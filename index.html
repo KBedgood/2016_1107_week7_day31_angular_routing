@@ -1,0 +1,39 @@
+<!-- AngularJS 1.X
+A module contains the different components of an AngularJS app
+A controller manages the app's data
+An expression displays values on the page
+A filter formats the value of an expression-->
+<!-- The ngRoute module routes your application to different pages without reloading the entire application.-->
+<!DOCTYPE html>
+<html ng-app=''>
+
+<head>
+            <title>Week 7. Day 34. kb</title>
+            <meta charset="UTF-8">
+            <meta name='author' content='Kristie Bedgood'>
+            <script src="http://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+</head>
+<header>
+            <nav>
+                        <h1>Hold Please!</h1>
+                        <p>Hairspray Depot</p>
+                        <ul>
+                                    <li><a ui-sref="home">Home</a></li>
+                                    <li><a ui-sref="home">Item Category List</a></li>
+                                    <li><a ui-sref="home">Item List</a></li>
+                        </ul>
+            </nav>
+
+             <main ui-view="content"></main>
+
+            <body>
+                        <footer>
+                                    <div><sup>2016 Kristie Bedgood, The Iron Yard. Assignment 2016_1011. Week 3. Day 12. All Rights Reserved.</sup>
+                                    </div>
+                        </footer>
+                        </div>
+                        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js "></script>
+                        <script src='main.js'></script>
+            </body>
+
+</html>

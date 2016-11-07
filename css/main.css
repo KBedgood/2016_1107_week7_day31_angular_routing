@@ -1,0 +1,153 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Hack from Jake
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+html,
+body,
+.container-fluid,
+.row:nth-child(1) {
+  height: 100%; }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Theme Colors
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Fonts
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Body
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4em;
+  background-color: #211917;
+  font-family: 'Raleway', sans-serif;
+  text-align: center; }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Navigation
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.container-fluid .row.nav {
+  background-color: #645F5E;
+  height: 19%;
+  width: 100%; }
+  .container-fluid .row.nav .log-in {
+    margin-left: 80px;
+    text-transform: uppercase;
+    color: #211917;
+    float: left; }
+    .container-fluid .row.nav .log-in label {
+      margin-top: 14px;
+      font-size: 14px; }
+      .container-fluid .row.nav .log-in label input {
+        background-color: #211917;
+        border: none;
+        padding: 8px;
+        padding-left: 12px;
+        letter-spacing: .5 px;
+        margin-right: 3px;
+        margin-left: 3px;
+        color: #C4C0C9;
+        font-weight: 500; }
+
+.container-fluid button.submit {
+  background-color: #C4C0C9;
+  color: #211917;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 3px;
+  padding-top: 3.5px; }
+
+.container-fluid h3 {
+  font-size: 16px;
+  float: right;
+  margin-right: 80px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #C4C0C9;
+  margin-top: 24px; }
+
+.container-fluid p {
+  font-size: 24px;
+  margin-top: 25px;
+  color: #645F5E;
+  font-weight: 500;
+  margin-bottom: 21px;
+  line-height: 30px;
+  letter-spacing: .25px; }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Main
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.new-entry h1 {
+  font-size: 81px;
+  color: #9A6B6A;
+  font-family: Lobster;
+  margin-bottom: 18px;
+  margin-top: 40px; }
+
+.new-entry img {
+  position: absolute;
+  margin-left: 175px;
+  width: 65px;
+  margin-top: 4px; }
+
+.new-entry .item {
+  width: 45%;
+  margin: 0 auto;
+  position: relative; }
+  .new-entry .item .actions {
+    position: absolute;
+    top: 37px;
+    right: 22px;
+    font-size: 24px;
+    color: #9A6B6A; }
+    .new-entry .item .actions i {
+      margin-right: 7px; }
+  .new-entry .item form .new-todo {
+    color: #C4C0C9;
+    height: 52px;
+    background-color: #493739;
+    border: none;
+    margin-top: 23px;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+    padding-left: 33px;
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%; }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Footer
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  width: 45%;
+  margin: 0 auto;
+  display: inline-block; }
+
+nav {
+  margin-top: 14px; }
+  nav ul {
+    padding: 0; }
+    nav ul li {
+      display: inline-block;
+      list-style-type: none; }
+      nav ul li button {
+        background-color: #9A6B6A;
+        border: none;
+        padding: 8px;
+        margin-left: 2px;
+        width: 100px;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-top: 12px;
+        font-weight: 600; }
+  nav .remaining {
+    margin-top: 12px;
+    font-family: lobster;
+    font-size: 18px; }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Responsive Web Design : Media Query Breakpoints
+------------------------------------------------------------------------------------------------------------------------------------------------------*/

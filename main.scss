@@ -1,0 +1,197 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Hack from Jake
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+html,
+body,
+.container-fluid,
+.row:nth-child(1) {
+            height: 100%;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Theme Colors
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+$colorDark: #211917;
+$colorClay: #645F5E;
+$colorMid: #493739;
+$colorLight: #C4C0C9;
+$colorBlush: #9A6B6A;
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Fonts
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+// font-family: 'Lobster', cursive;
+// font-family: 'Raleway', sans-serif;
+// Raleway:300,400,500,600
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Body
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.4em;
+            background-color: $colorDark;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Navigation
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.container-fluid {
+            .row.nav {
+                        background-color: $colorClay;
+                        height: 19%;
+                        width: 100%;
+                        .log-in {
+                                    margin-left: 80px;
+                                    text-transform: uppercase;
+                                    color: $colorDark;
+                                    float: left;
+                                    label {
+                                                margin-top: 14px;
+                                                font-size: 14px;
+                                                input {
+                                                            background-color: $colorDark;
+                                                            border: none;
+                                                            padding: 8px;
+                                                            padding-left: 12px;
+                                                            letter-spacing: .5 px;
+                                                            margin-right: 3px;
+                                                            margin-left: 3px;
+                                                            color: $colorLight;
+                                                            font-weight: 500;
+                                                }
+                                    }
+                        }
+            }
+            button.submit {
+                        background-color: $colorLight;
+                        color: $colorDark;
+                        border: none;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-left: 3px;
+                        padding-top: 3.5px;
+            }
+            h3 {
+                        font-size: 16px;
+                        float: right;
+                        margin-right: 80px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        color: $colorLight;
+                        margin-top: 24px;
+            }
+            p {
+                        font-size: 24px;
+                        margin-top: 25px;
+                        color: #645F5E;
+                        font-weight: 500;
+                        margin-bottom: 21px;
+                        line-height: 30px;
+                        letter-spacing: .25px;
+            }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Main
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.new-entry {
+            h1 {
+                        font-size: 81px;
+                        color: #9A6B6A;
+                        font-family: Lobster;
+                        margin-bottom: 18px;
+                        margin-top: 40px;
+            }
+            img {
+                        position: absolute;
+                        margin-left: 175px;
+                        width: 65px;
+                        margin-top: 4px;
+            }
+            .item {
+                        width: 45%;
+                        margin: 0 auto;
+                        position: relative;
+                        .actions {
+                                    position: absolute;
+                                    top: 37px;
+                                    right: 22px;
+                                    font-size: 24px;
+                                    color: $colorBlush;
+                                    i {
+                                                margin-right: 7px;
+                                    }
+                        }
+                        form {
+                                    .new-todo {
+                                                color: $colorLight;
+                                                height: 52px;
+                                                background-color: #493739;
+                                                border: none;
+                                                margin-top: 23px;
+                                                margin-bottom: 7px;
+                                                letter-spacing: 1px;
+                                                padding-left: 33px;
+                                                font-size: 20px;
+                                                font-weight: 300;
+                                                width: 100%;
+                                    }
+                        }
+            }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Footer
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+            width: 45%;
+            margin: 0 auto;
+            display: inline-block;
+}
+
+nav {
+            margin-top: 14px;
+            ul {
+                        padding: 0;
+                        li {
+                                    display: inline-block;
+                                    list-style-type: none;
+                                    button {
+                                                background-color: #9A6B6A;
+                                                border: none;
+                                                padding: 8px;
+                                                margin-left: 2px;
+                                                width: 100px;
+                                                font-size: 12px;
+                                                text-transform: uppercase;
+                                                padding-top: 12px;
+                                                font-weight: 600;
+                                    }
+                                    .show-all {}
+                                    .show-active {}
+                                    .show-completed {}
+                        }
+            }
+            .remaining {
+                        margin-top: 12px;
+                        font-family: lobster;
+                        font-size: 18px;
+            }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+Responsive Web Design : Media Query Breakpoints
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1158px) {}
