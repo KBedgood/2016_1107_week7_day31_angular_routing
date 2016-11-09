@@ -11,39 +11,60 @@ A filter formats the value of an expression-->
      <title>Week 7. Day 34. kb</title>
      <meta charset="UTF-8">
      <meta name='author' content='Kristie Bedgood'>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js "></script>
      <script src="http://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="css/main.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<header>
-     <nav>
-          <ul>
-               <li><a ui-sref="home">Home</a></li>
-               <li><a ui-sref="category">Brand Collections</a></li>
-               <li><a ui-sref="list">Item List</a></li>
-          </ul>
-     </nav>
-     <div>
-          <h1>Hold Please!</h1>
-          <h3>Hairspray Depot</h3>
-     </div>
-     <div>Search
-          <input type="text" name="" value="">
-     </div>
-     <main ui-view></main>
 
-
-     <div class="city-weather">
-          <my-weather city="Cincinnati"></my-weather>
-     </div>
-
-     <body>
-          <footer>
-               <div style="margin-top: 20px"><sup>2016 Kristie Bedgood, The Iron Yard. Assignment 2016_1107. Week 7. Day 31. All Rights Reserved.</sup>
+<body>
+     <div class="container-fluid">
+          <div class="row">
+               <div class="col-md-12">
+                    <nav>
+                         <img src="images/holdPlease_logo_white-01.svg" alt="">
+                         <ul>
+                              <li><a ui-sref="home">Home</a></li>
+                              <li><a ui-sref="category">Brand Collections</a></li>
+                              <li><a ui-sref="list">Item List</a></li>
+                         </ul>
+                         <div class="search">
+                              <h3>Search</h3>
+                              <input type="text" name="" value="">
+                         </div>
+                    </nav>
                </div>
-          </footer>
           </div>
-          <script src='main.js'></script>
-          <script src='/factories/weather_api_factory.js'></script>
-     </body>
+     </div>
+     <div class="container">
+          <div class="row main">
+               <div class="left">
+                    <div class="col-md-2">
+                         <div class="city-weather">
+                              <my-weather city="Cincinnati"></my-weather>
+                         </div>
+                    </div>
+               </div>
+               <div class="right">
+                    <div class="col-md-10">
+                         <main ui-view></main>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <footer>
+          <div class="row main-two">
+               <div class="right">
+                    <div class="col-md-12">
+                         <h4>2016 Kristie Bedgood, The Iron Yard. Assignment 2016_1107. Week 7. Day 31. All Rights Reserved.</h4>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+     <script src='main.js'></script>
+     <script src='/factories/weather_api_factory.js'></script>
+</body>
 
 </html>
