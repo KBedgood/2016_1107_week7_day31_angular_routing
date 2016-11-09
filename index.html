@@ -8,34 +8,42 @@ A filter formats the value of an expression-->
 <html ng-app='holdPlease'>
 
 <head>
-            <title>Week 7. Day 34. kb</title>
-            <meta charset="UTF-8">
-            <meta name='author' content='Kristie Bedgood'>
-            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js "></script>
-            <script src="http://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+     <title>Week 7. Day 34. kb</title>
+     <meta charset="UTF-8">
+     <meta name='author' content='Kristie Bedgood'>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js "></script>
+     <script src="http://unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
 </head>
 <header>
-            <nav>
-                        <h1>Hold Please!</h1>
-                        <h3>Hairspray Depot</h3>
-                        <ul>
-                                    <li><a ui-sref="home">Home</a></li>
-                                    <li><a ui-sref="category">Brand Collections</a></li>
-                                    <li><a ui-sref="list">Item List</a></li>
-                        </ul>
-            </nav>
-            <div>Search
-                        <input type="text" name="" value="">
-            </div>
-            <main ui-view></main>
+     <nav>
+          <ul>
+               <li><a ui-sref="home">Home</a></li>
+               <li><a ui-sref="category">Brand Collections</a></li>
+               <li><a ui-sref="list">Item List</a></li>
+          </ul>
+     </nav>
+     <div>
+          <h1>Hold Please!</h1>
+          <h3>Hairspray Depot</h3>
+     </div>
+     <div>Search
+          <input type="text" name="" value="">
+     </div>
+     <main ui-view></main>
 
-            <body>
-                        <footer>
-                                    <div style="margin-top: 20px"><sup>2016 Kristie Bedgood, The Iron Yard. Assignment 2016_1107. Week 7. Day 31. All Rights Reserved.</sup>
-                                    </div>
-                        </footer>
-                        </div>
-                        <script src='main.js'></script>
-            </body>
+
+     <div class="city-weather">
+          <my-weather city="Cincinnati"></my-weather>
+     </div>
+
+     <body>
+          <footer>
+               <div style="margin-top: 20px"><sup>2016 Kristie Bedgood, The Iron Yard. Assignment 2016_1107. Week 7. Day 31. All Rights Reserved.</sup>
+               </div>
+          </footer>
+          </div>
+          <script src='main.js'></script>
+          <script src='/factories/weather_api_factory.js'></script>
+     </body>
 
 </html>
