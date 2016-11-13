@@ -1,0 +1,62 @@
+.container-fluid {
+  background-color: black; }
+  .container-fluid .row {
+    width: 1100px;
+    margin: 0 auto; }
+    .container-fluid .row .left .logo {
+      width: 100%;
+      margin: 13px; }
+    .container-fluid .row .middle ul {
+      display: inline-block;
+      margin-top: 27px;
+      padding: 0;
+      font-size: 12px;
+      float: right; }
+      .container-fluid .row .middle ul li {
+        display: inline-block;
+        margin-left: 23px; }
+        .container-fluid .row .middle ul li a {
+          color: white; }
+    .container-fluid .row .right {
+      display: inline-block;
+      float: right; }
+      .container-fluid .row .right .search {
+        display: inline-block;
+        color: white;
+        margin-top: 8px;
+        font-size: 12px; }
+        .container-fluid .row .right .search h3 {
+          display: inline-block;
+          color: white;
+          font-size: 12px;
+          margin-right: 9px; }
+        .container-fluid .row .right .search input {
+          display: inline-block;
+          width: 155px; }
+
+.featured {
+  border-left: 1px solid white;
+  padding: 0px 25px; }
+
+.container-fluid {
+  width: 100%; }
+  .container-fluid img {
+    background-position: center;
+    width: 100%; }
+
+h2.cat {
+  font-size: 14.5px;
+  color: grey; }
+  h2.cat ul.brand-logos {
+    list-style: none; }
+    h2.cat ul.brand-logos li {
+      list-style: none; }
+      h2.cat ul.brand-logos li .logo {
+        width: 120px; }
+
+.footer {
+  text-align: center;
+  font-family: helvetica, serif;
+  font-size: 14px;
+  margin-top: 10px;
+  color: grey; }

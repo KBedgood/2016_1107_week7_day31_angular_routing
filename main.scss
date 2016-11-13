@@ -1,0 +1,87 @@
+//MAIN HOME VIEW 
+.container-fluid {
+     background-color: black;
+     .row {
+          width: 1100px;
+          margin: 0 auto;
+          .left {
+               .logo {
+                    width: 100%;
+                    margin: 13px;
+               }
+          }
+          .middle {
+               ul {
+                    display: inline-block;
+                    margin-top: 27px;
+                    padding: 0;
+                    font-size: 12px;
+                    float: right;
+                    li {
+                         display: inline-block;
+                         margin-left: 23px;
+                         a {
+                              color: white;
+                         }
+                    }
+               }
+          }
+          .right {
+               display: inline-block;
+               float: right;
+               .search {
+                    display: inline-block;
+                    color: white;
+                    margin-top: 8px;
+                    font-size: 12px;
+                    h3 {
+                         display: inline-block;
+                         color: white;
+                         font-size: 12px;
+                         margin-right: 9px;
+                    }
+                    input {
+                         display: inline-block;
+                         width: 155px;
+                    }
+               }
+          }
+     }
+}
+
+.featured {
+     border-left: 1px solid white;
+     padding: 0px 25px;
+}
+
+//HOME PARTIAL
+.container-fluid {
+     width: 100%;
+     img {
+          background-position: center;
+          width: 100%;
+     }
+}
+
+h2.cat {
+     font-size: 14.5px;
+     color: grey;
+     ul.brand-logos {
+          list-style: none;
+          li {
+               list-style: none;
+               .logo {
+                    width: 120px;
+               }
+          }
+     }
+}
+
+//FOOTER
+.footer {
+     text-align: center;
+     font-family: helvetica, serif;
+     font-size: 14px;
+     margin-top: 10px;
+     color: grey;
+}
