@@ -1,87 +1,152 @@
-//MAIN HOME VIEW 
-.container-fluid {
-     background-color: black;
-     .row {
-          width: 1100px;
-          margin: 0 auto;
-          .left {
-               .logo {
-                    width: 100%;
-                    margin: 13px;
+     //MAIN HOME VIEW NAVIGATION
+     .container-fluid {
+          background-color: black;
+          .row {
+               width: 1100px;
+               margin: 0 auto;
+               .left {
+                    .logo {
+                         width: 100%;
+                         margin: 13px;
+                    }
                }
-          }
-          .middle {
-               ul {
-                    display: inline-block;
-                    margin-top: 27px;
-                    padding: 0;
-                    font-size: 12px;
-                    float: right;
-                    li {
+               .middle {
+                    ul {
                          display: inline-block;
-                         margin-left: 23px;
-                         a {
+                         margin-top: 27px;
+                         padding: 0;
+                         font-size: 12px;
+                         float: right;
+                         li {
+                              display: inline-block;
+                              margin-left: 23px;
+                              a {
+                                   color: white;
+                                   text-decoration: none;
+                                   list-style: none;
+                              }
+                         }
+                    }
+               }
+               .right {
+                    display: inline-block;
+                    float: right;
+                    .search {
+                         display: inline-block;
+                         color: white;
+                         margin-top: 8px;
+                         font-size: 12px;
+                         h3 {
+                              display: inline-block;
                               color: white;
+                              font-size: 12px;
+                              margin-right: 9px;
+                         }
+                         input {
+                              display: inline-block;
+                              width: 155px;
                          }
                     }
                }
           }
-          .right {
-               display: inline-block;
-               float: right;
-               .search {
+     }
+     
+     .featured {
+          border-left: 1px solid white;
+          padding: 0px 25px;
+     }
+     
+     //PARTIAL for HOME
+     main {
+          .container-fluid.bigImage {
+               background-color: white;
+               img.mainImage {
+                    background-size: cover;
+               }
+          }
+     }
+     
+     //PARTIAL for BRAND COLLECTIONS
+     main {
+          .container.main {
+               width: 990px;
+               .brandCollections {
+                    ul {
+                         margin-top: 0;
+                         margin-bottom: 10px;
+                         list-style: none;
+                         display: inline-block;
+                         li {
+                              display: inline-block;
+                              width: 228px;
+                              margin-left: 57px;
+                              margin-bottom: -14px;
+                              margin-top: 80px;
+                              img {
+                                   display: inline-block;
+                                   width: 100%;
+                                   margin: 0 auto;
+                                   background-position: center;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+     
+     //PARTIAL for ITEM LIST 
+     .container.list {
+          width: 990px;
+          .row {
+               margin: 0 auto;
+               .col-2-md {
                     display: inline-block;
-                    color: white;
-                    margin-top: 8px;
-                    font-size: 12px;
-                    h3 {
+                    .stock {
                          display: inline-block;
-                         color: white;
-                         font-size: 12px;
-                         margin-right: 9px;
-                    }
-                    input {
-                         display: inline-block;
-                         width: 155px;
+                         margin: 41px;
+                         img {
+                              max-height: 185px;
+                              margin-top: 40px;
+                         }
+                         h5 {
+                              font-size: 12px;
+                              text-align: center;
+                         }
+                         button {
+                              background-color: black;
+                              color: white;
+                              padding: 8px;
+                              font-size: 8px;
+                              border: none;
+                              margin: 0 auto;
+                         }
                     }
                }
           }
      }
-}
-
-.featured {
-     border-left: 1px solid white;
-     padding: 0px 25px;
-}
-
-//HOME PARTIAL
-.container-fluid {
-     width: 100%;
-     img {
-          background-position: center;
-          width: 100%;
-     }
-}
-
-h2.cat {
-     font-size: 14.5px;
-     color: grey;
-     ul.brand-logos {
-          list-style: none;
-          li {
-               list-style: none;
-               .logo {
-                    width: 120px;
+     
+     //PARTIAL for FEATURED 
+     .container.product {
+          width: 990px;
+          .featuredItem {
+               h3 {
+                    float: left;
+               }
+               a {}
+               img {
+                    width: 10%;
                }
           }
+          .itemDescription {
+               p {}
+          }
      }
-}
-
-//FOOTER
-.footer {
-     text-align: center;
-     font-family: helvetica, serif;
-     font-size: 14px;
-     margin-top: 10px;
-     color: grey;
-}
+     
+     //FOOTER
+     .footer {
+          text-align: center;
+          font-family: helvetica, serif;
+          font-size: 14px;
+          margin-top: 80px;
+          color: grey;
+     }

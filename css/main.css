@@ -16,7 +16,9 @@
         display: inline-block;
         margin-left: 23px; }
         .container-fluid .row .middle ul li a {
-          color: white; }
+          color: white;
+          text-decoration: none;
+          list-style: none; }
     .container-fluid .row .right {
       display: inline-block;
       float: right; }
@@ -38,25 +40,63 @@
   border-left: 1px solid white;
   padding: 0px 25px; }
 
-.container-fluid {
-  width: 100%; }
-  .container-fluid img {
-    background-position: center;
-    width: 100%; }
+main .container-fluid.bigImage {
+  background-color: white; }
+  main .container-fluid.bigImage img.mainImage {
+    background-size: cover; }
 
-h2.cat {
-  font-size: 14.5px;
-  color: grey; }
-  h2.cat ul.brand-logos {
-    list-style: none; }
-    h2.cat ul.brand-logos li {
-      list-style: none; }
-      h2.cat ul.brand-logos li .logo {
-        width: 120px; }
+main .container.main {
+  width: 990px; }
+  main .container.main .brandCollections ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    list-style: none;
+    display: inline-block; }
+    main .container.main .brandCollections ul li {
+      display: inline-block;
+      width: 228px;
+      margin-left: 57px;
+      margin-bottom: -14px;
+      margin-top: 80px; }
+      main .container.main .brandCollections ul li img {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+        background-position: center; }
+
+.container.list {
+  width: 990px; }
+  .container.list .row {
+    margin: 0 auto; }
+    .container.list .row .col-2-md {
+      display: inline-block; }
+      .container.list .row .col-2-md .stock {
+        display: inline-block;
+        margin: 41px; }
+        .container.list .row .col-2-md .stock img {
+          max-height: 185px;
+          margin-top: 40px; }
+        .container.list .row .col-2-md .stock h5 {
+          font-size: 12px;
+          text-align: center; }
+        .container.list .row .col-2-md .stock button {
+          background-color: black;
+          color: white;
+          padding: 8px;
+          font-size: 8px;
+          border: none;
+          margin: 0 auto; }
+
+.container.product {
+  width: 990px; }
+  .container.product .featuredItem h3 {
+    float: left; }
+  .container.product .featuredItem img {
+    width: 10%; }
 
 .footer {
   text-align: center;
   font-family: helvetica, serif;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 80px;
   color: grey; }
